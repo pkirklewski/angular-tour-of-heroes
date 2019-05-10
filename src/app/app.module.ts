@@ -9,6 +9,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms'; // <-- NgMode
 import { MaterialModule } from './material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import 'hammerjs';
+import {MatInputModule, MatButtonModule} from '@angular/material';
 
 
 @NgModule({
@@ -21,7 +22,9 @@ import 'hammerjs';
     FormsModule,
     MaterialModule,
     BrowserAnimationsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatInputModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
