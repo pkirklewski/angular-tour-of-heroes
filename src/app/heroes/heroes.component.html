@@ -1,48 +1,23 @@
-<!-- <form class="heroForm" (ngSubmit)="onSubmit()" #heroes="ngForm">
-  <table class="heroTable">
-<tr>
-<td>
-<md-input-container class="heroTable">
-<input type="text" MatImput>
-
-</md-input-container>  
-</td>
-
-</tr>
-
-  </table>
-</form> -->
-<!-- 
-<form class="heroForm" (ngSubmit)="onSubmit()" #heroes="ngForm"> -->
 
     <mat-tab-group color="white">
         <mat-tab label="Heroes">
-            <h2>{{hero.name | uppercase}} Details </h2>
-              <div><span>id: </span>{{hero.id}}</div>
-              <div>
-                <label>name:
-                  <input [(ngModel)]="hero.name" placeholder="name"/>
-                </label>
-              </div>
+            <ul class="heroes">
+              <li *ngFor="let hero of heroes">
+                <span class="badge">{{hero.id}}</span> {{hero.name}}
+              </li>
+            </ul>
         </mat-tab>
         <mat-tab label="Applications">
-          <!-- [disabled]="!isBatchExists" -->
-          <!-- <app-person-applications></app-person-applications> -->
           <div *ngIf="isAddViewShown && !isEditViewShown && !isListViewShown">
-        
           </div>
-          
           <div *ngIf="!isAddViewShown && isEditViewShown && !isListViewShown">
-            
           </div>
-      
-          <div *ngIf="!isAddViewShown && !isEditViewShown && isListViewShown">
-            
+          <div *ngIf="!isAddViewShown && !isEditViewShown && isListViewShown">           
           </div>
         </mat-tab>
       </mat-tab-group>
 
 
-<!-- </form> -->
+
 
 

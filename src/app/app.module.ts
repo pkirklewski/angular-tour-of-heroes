@@ -11,7 +11,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import 'hammerjs';
 import {MatInputModule, MatButtonModule} from '@angular/material';
 
-
 @NgModule({
   declarations: [
     AppComponent,
